@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <div th:fragment="fragment-nav">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/demo/home2"><img class="paimon navber-brand" src="https://lh3.google.com/u/0/d/1aqmwxZMMtHNxT2hlY8Sf_QnX-zAcq-Ku=w1545-h819-iv1" alt="paimonimg" width="4%" height="4%"><span onmouseover="this.style.color='rgb(217, 245, 58)';" onmouseout="this.style.color='';">PAI</span>MON</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mr-5">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#" th:href="@{/demo/home2}">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" th:href="@{/Char}">Character</a> <!-- 캐릭터 -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" th:href="@{/Items}">Itmes</a>  <!-- 장비 -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" th:href="@{/Artifacts}">Artifacts</a> <!-- 아티펙트 -->
+                        </li>
+                        <li class ="nav-item dropdown">
+                            <a class="nav-link dropdwon-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Settings
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#" th:href="@{/login}">LogIn</a></li>
+                                <li><a class="dropdown-item" href="#">LogOut</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#">Help</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+</html>
