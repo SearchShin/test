@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <script>
-        function onDisplay(){$('.attr_1').show();$('.attr_2').show();$('.attr_3').show();$('.attr_4').show();$('.attr_5').show();$('.attr_6').show();$('.attr_7').show();}
-        function pyroDisplay() {$('.attr_1').show();$('.attr_2').hide();$('.attr_3').hide();$('.attr_4').hide();$('.attr_5').hide();$('.attr_6').hide();$('.attr_7').hide();}
-        function hydroDisplay() {$('.attr_1').hide();$('.attr_2').show();$('.attr_3').hide();$('.attr_4').hide();$('.attr_5').hide();$('.attr_6').hide();$('.attr_7').hide();}
-        function electroDisplay() {$('.attr_1').hide();$('.attr_2').hide();$('.attr_3').show();$('.attr_4').hide();$('.attr_5').hide();$('.attr_6').hide();$('.attr_7').hide();}
-        function anemoDisplay() {$('.attr_1').hide();$('.attr_2').hide();$('.attr_3').hide();$('.attr_4').show();$('.attr_5').hide();$('.attr_6').hide();$('.attr_7').hide();}
-        function cryoDisplay() {$('.attr_1').hide();$('.attr_2').hide();$('.attr_3').hide();$('.attr_4').hide();$('.attr_5').show();$('.attr_6').hide();$('.attr_7').hide();}
-        function geoDisplay() {$('.attr_1').hide();$('.attr_2').hide();$('.attr_3').hide();$('.attr_4').hide();$('.attr_5').hide();$('.attr_6').show();$('.attr_7').hide();}
-        function dendroDisplay() {$('.attr_1').hide();$('.attr_2').hide();$('.attr_3').hide();$('.attr_4').hide();$('.attr_5').hide();$('.attr_6').hide();$('.attr_7').show();}
+        function onDisplay(){$('.attr_1').show();$('.attr_2').show();$('.attr_3').show();$('.attr_4').show();$('.attr_5').show();$('.attr_6').show();$('.attr_7').show();$('.attr_8').show();}
+        function pyroDisplay() {$('.attr_1').show();$('.attr_2').hide();$('.attr_3').hide();$('.attr_4').hide();$('.attr_5').hide();$('.attr_6').hide();$('.attr_7').hide();$('.attr_8').hide();}
+        function hydroDisplay() {$('.attr_1').hide();$('.attr_2').show();$('.attr_3').hide();$('.attr_4').hide();$('.attr_5').hide();$('.attr_6').hide();$('.attr_7').hide();$('.attr_8').hide();}
+        function electroDisplay() {$('.attr_1').hide();$('.attr_2').hide();$('.attr_3').show();$('.attr_4').hide();$('.attr_5').hide();$('.attr_6').hide();$('.attr_7').hide();$('.attr_8').hide();}
+        function anemoDisplay() {$('.attr_1').hide();$('.attr_2').hide();$('.attr_3').hide();$('.attr_4').show();$('.attr_5').hide();$('.attr_6').hide();$('.attr_7').hide();$('.attr_8').hide();}
+        function cryoDisplay() {$('.attr_1').hide();$('.attr_2').hide();$('.attr_3').hide();$('.attr_4').hide();$('.attr_5').show();$('.attr_6').hide();$('.attr_7').hide();$('.attr_8').hide();}
+        function geoDisplay() {$('.attr_1').hide();$('.attr_2').hide();$('.attr_3').hide();$('.attr_4').hide();$('.attr_5').hide();$('.attr_6').show();$('.attr_7').hide();$('.attr_8').hide();}
+        function dendroDisplay() {$('.attr_1').hide();$('.attr_2').hide();$('.attr_3').hide();$('.attr_4').hide();$('.attr_5').hide();$('.attr_6').hide();$('.attr_7').show();$('.attr_8').hide();}
         
 
     </script>
@@ -21,115 +21,199 @@
 	<body>
 		<div th:replace="../fragments/topnav.html :: fragment-nav"></div>
 		<section>
-            <button onclick="onDisplay()">hide show</button> 
-            <button onclick="pyroDisplay()">Pyro</button>
-            <button onclick="hydroDisplay()">Hydro</button>
-            <button onclick="electroDisplay()">Electro</button>
-            <button onclick="anemoDisplay()">Anemo</button>
-            <button onclick="cryoDisplay()">Cryo</button>
-            <button onclick="geoDisplay()">Geo</button>
-            <button onclick="dendroDisplay()">Dendro</button>
-			  
+            <div style="text-align: center;">
+            <button onclick="onDisplay()"><img src="" alt="">hide show</button> 
+            <button onclick="pyroDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/pyro.png?raw=true" alt="불"></button>
+            <button onclick="hydroDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/hydro.png?raw=true" alt="물"></button>
+            <button onclick="electroDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/electro.png?raw=true" alt="번개"></button>
+            <button onclick="anemoDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/anemo.png?raw=true" alt="바람"></button>
+            <button onclick="cryoDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/cryo.png?raw=true" alt="얼음"></button>
+            <button onclick="geoDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/geo.png?raw=true" alt="바위"></button>
+            <button onclick="dendroDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/dendro.png?raw=true" alt="풀"></button>
+			</div> 
 			  <div class="flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6 card_area">
-				<a
-				  data-fancybox="gallery"
-				  href="https://namu.wiki/w/%EB%B0%A9%EB%9E%91%EC%9E%90(%EC%9B%90%EC%8B%A0)"
-				  data-caption="First image"
-				>
-				  <img class="attr_3 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_28.png?raw=true"/>
-				</a>
-				<a
-				  data-fancybox="gallery"
-				  href="https://lipsum.app/id/61/1600x1200"
-				  data-caption="Second image"
-				>
-				  <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_29.png?raw=true" />
-				</a>
-				<a
-				  data-fancybox="gallery"
-				  href="https://lipsum.app/id/62/1600x1200"
-				  data-caption="Third image"
-				>
-				  <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_1.png?raw=true" />
-				</a>
-				<a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-				  <img class="attr_2 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_2.png?raw=true" />
-				</a>
-                <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_3.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_4.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_1 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_5.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_6.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_7.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_8.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_9.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_10.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_11.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_12.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_13.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_14.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_15.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_16.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_17.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_18.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_19.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_20.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_21.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_22.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_23.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_25.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_24.png?raw=true" />
-                  </a>
-                  <a data-fancybox="gallery" href="https://lipsum.app/id/63/1600x1200">
-                    <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_26.png?raw=true" />
-                  </a>
-				<a data-fancybox="gallery" href="https://lipsum.app/id/64/1600x1200">
-				  <img class="attr_4 items_wrap" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_27.png?raw=true" />
-				</a>
+                    <a data-fancybox="gallery" href="https://namu.wiki/w/%EB%B0%A9%EB%9E%91%EC%9E%90(%EC%9B%90%EC%8B%A0)" class="items_char">
+                        <img class="attr_4 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_1.png?raw=true"/>
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/61/1600x1200" class="items_char">
+                        <img class="attr_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_2.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_3 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_3.png?raw=true" />
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_5 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_4.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_2 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_5.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_1 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_6.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_3 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_7.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_4 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_8.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_1 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_9.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_10.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_6 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_11.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_3 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_12.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_4 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_13.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_2 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_14.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_4 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_15.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_3 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_16.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_6 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_17.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_18.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_2 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_19.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_5 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_20.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_5 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_21.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_3 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_22.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_8 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_23.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_8 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_24.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_5 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_25.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_2 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_26.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_6 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_27.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_28.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_6 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_29.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_5 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_30.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_1 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_31.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_5 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_32.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_33.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_5 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_34.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_4 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_35.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_5 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_36.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_1 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_37.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_4 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_38.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_3 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_39.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_3 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_40.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_5 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_41.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_2 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_42.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_43.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_6 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_44.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_6 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_45.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_5 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_46.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_6 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_47.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_3 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_48.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_2 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_49.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_2 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_50.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_3 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_51.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_4 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_52.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_7 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_53.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_7 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_54.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_3 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_55.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_3 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_56.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_2 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_57.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_2 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_58.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_7 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_59.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_4 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_60.png?raw=true" />
+                    </a>
+                    <a data-fancybox="gallery" href="https://lipsum.app/id/62/1600x1200" class="items_char">
+                        <img class="attr_4 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/char/icon_61.png?raw=true" />
+                    </a>
 			  </div>
 		</section>
 		<div th:replace="../fragments/template :: footer"></div>

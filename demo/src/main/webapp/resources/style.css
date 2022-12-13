@@ -164,6 +164,7 @@ a[data-fancybox] img {
 5.얼음
 6.바위
 7.풀
+8.주인공
 */
 .attr_1 {background: #a2594e;}
 .attr_2 {background: #5187ca;}
@@ -172,9 +173,24 @@ a[data-fancybox] img {
 .attr_5 {background: #98bcce;}
 .attr_6 {background: #d6b863;}
 .attr_7 {background: #83ab6a;}
+.attr_8 {background: #d4ccbc;}
 
-.items_wrap{
+.items_char{
+  float:left;
+
+}
+.items_wrap5{
   border: 3px solid gold;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  -webkit-border-radius: 7px;
+	width:106px;
+  height:106px;
+}
+
+.items_wrap4{
+  border: 3px solid purple;
   border-radius: 7px;
   -moz-border-radius: 7px;
   -khtml-border-radius: 7px;
@@ -186,3 +202,8 @@ a[data-fancybox] img {
 .db_card .card_img img {border-radius: 5px;border: 1px solid #b2b2b2;width: 106px;height: 106px;}
 .db_card .card_info { padding: 5px 0px 10px 0px;}
 .db_card .card_info p.content-list-0 { font-weight: bold; font-size: 16px;}
+
+button{
+  background-color: transparent;
+  border: none;
+}
