@@ -1,5 +1,15 @@
 <!DOCTYPE html>
 <html>
+    <script>
+        function onDisplay(){$('.wp_1').show();$('.wp_2').show();$('.wp_3').show();$('.wp_4').show();$('.wp_5').show();}
+        function swordDisplay() {$('.wp_1').show();$('.wp_2').hide();$('.wp_3').hide();$('.wp_4').hide();$('.wp_5').hide();}
+        function claymoreDisplay() {$('.wp_1').hide();$('.wp_2').show();$('.wp_3').hide();$('.wp_4').hide();$('.wp_5').hide();}
+        function polearmDisplay() {$('.wp_1').hide();$('.wp_2').hide();$('.wp_3').show();$('.wp_4').hide();$('.wp_5').hide();}
+        function catalystDisplay() {$('.wp_1').hide();$('.wp_2').hide();$('.wp_3').hide();$('.wp_4').show();$('.wp_5').hide();}
+        function bowDisplay() {$('.wp_1').hide();$('.wp_2').hide();$('.wp_3').hide();$('.wp_4').hide();$('.wp_5').show();}
+   
+
+    </script>
     <head th:include="../fragments/template :: head(~{::title})">
     	<title>Home page</title>
 		<link rel="stylesheet" href="../../resources/style.css" >
@@ -9,7 +19,156 @@
 	<body>
 		<div th:replace="../fragments/topnav.html :: fragment-nav"></div>
 		<section>
-            
+            <div style="text-align: center; margin-top:1.5%; margin-bottom: 1.5%;">
+            <button onclick="onDisplay()" style="border-radius:40%; background-color: #ffffff;border: none;width: 64px;height: 64px;"><img src="" alt="">hide show</button> 
+            <button onclick="swordDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/sword.png?raw=true" alt="한손검" width="64px" height="64px"></button>
+            <button onclick="claymoreDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/claymore.png?raw=true" alt="대검" width="64px" height="64px"></button>
+            <button onclick="polearmDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/polearm.png?raw=true" alt="창" width="64px" height="64px"></button>
+            <button onclick="catalystDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/catalyst.png?raw=true" alt="법구"width="64px" height="64px"></button>
+            <button onclick="bowDisplay()"><img src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/logo/bow.png?raw=true" alt="활"width="64px" height="64px"></button>	</div> 
+			  <div class="flex flex-wrap gap-5 justify-center max-w-5xl mx-auto px-6 card_area">
+                    <a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-2.1.1" class="items_char">
+                        <img class="wp_1 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_1.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-2.1.2" class="items_char">
+                        <img class="wp_1 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_2.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-2.2.1" class="items_char">
+                        <img class="wp_1 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_3.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-2.2.3" class="items_char">
+                        <img class="wp_1 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_4.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-2.2.4" class="items_char">
+                        <img class="wp_1 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_5.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-2.2.5" class="items_char">
+                        <img class="wp_1 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_6.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-2.2.6" class="items_char">
+                        <img class="wp_1 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_7.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.1.1" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_8.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.1.2" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_9.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.1.3" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_10.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.1.4" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_11.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.2.1" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_12.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.2.2" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_13.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.3.1" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_14.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.3.2" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_15.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.3.3" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_16.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.4.1" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_17.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.4.2" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_18.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.4.3" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_19.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.4.4" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_20.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.4.4.1" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_21.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.4.5" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_22.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.5.1" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_23.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.5.2" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_24.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.5.3" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_25.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-3.5.4" class="items_char">
+                        <img class="wp_1 items_wrap4" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_26.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-4.1.1" class="items_char">
+                        <img class="wp_1 items_wrap3" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_27.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-4.1.2" class="items_char">
+                        <img class="wp_1 items_wrap3" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_28.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-4.1.3" class="items_char">
+                        <img class="wp_1 items_wrap3" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_29.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-4.2.1" class="items_char">
+                        <img class="wp_1 items_wrap3" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_30.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-4.2.2" class="items_char">
+                        <img class="wp_1 items_wrap3" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_31.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-4.2.3" class="items_char">
+                        <img class="wp_1 items_wrap3" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_32.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-5.1" class="items_char">
+                        <img class="wp_1 items_wrap2" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_33.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%95%9C%EC%86%90%EA%B2%80#s-6.1" class="items_char">
+                        <img class="wp_1 items_wrap1" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/sword_34.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%EC%96%91%EC%86%90%EA%B2%80#s-2.1.1" class="items_char">
+                        <img class="wp_2 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/claymore_1.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%EC%96%91%EC%86%90%EA%B2%80#s-2.1.2" class="items_char">
+                        <img class="wp_2 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/claymore_2.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%EC%96%91%EC%86%90%EA%B2%80#s-2.2.1" class="items_char">
+                        <img class="wp_2 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/claymore_3.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%EC%96%91%EC%86%90%EA%B2%80#s-2.2.2" class="items_char">
+                        <img class="wp_2 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/claymore_4.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%EC%9E%A5%EB%B3%91%EA%B8%B0#s-2.1.1" class="items_char">
+                        <img class="wp_3 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/polearm_1.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%EC%9E%A5%EB%B3%91%EA%B8%B0#s-2.1.2" class="items_char">
+                        <img class="wp_3 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/polearm_2.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%EC%9E%A5%EB%B3%91%EA%B8%B0#s-2.2.1" class="items_char">
+                        <img class="wp_3 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/polearm_3.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%EB%B2%95%EA%B5%AC#s-2.1.1" class="items_char">
+                        <img class="wp_4 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/catalyst_1.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%EB%B2%95%EA%B5%AC#s-2.1.2" class="items_char">
+                        <img class="wp_4 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/catalyst_2.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%EB%B2%95%EA%B5%AC#s-2.2.1" class="items_char">
+                        <img class="wp_4 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/catalyst_3.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%99%9C#s-2.1.1" class="items_char">
+                        <img class="wp_5 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/bow_1.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%99%9C#s-2.1.2" class="items_char">
+                        <img class="wp_5 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/bow_2.png?raw=true"/>
+                    </a>
+					<a data-fancybox="gallery" href="https://namu.wiki/w/%EC%9B%90%EC%8B%A0/%EB%AC%B4%EA%B8%B0/%ED%99%9C#s-2.2.1" class="items_char">
+                        <img class="wp_5 items_wrap5" src="https://github.com/SearchShin/test/blob/master/demo/src/main/webapp/resources/image/weapons/bow_3.png?raw=true"/>
+                    </a>
+			  </div>
 		</section>
 		<div th:replace="../fragments/template :: footer"></div>
 		<menu>

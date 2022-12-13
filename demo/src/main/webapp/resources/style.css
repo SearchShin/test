@@ -175,6 +175,19 @@ a[data-fancybox] img {
 .attr_7 {background: #83ab6a;}
 .attr_8 {background: #d4ccbc;}
 
+/*
+1.한손검
+2.대검
+3.창
+4.법구
+5.활
+*/
+.wp_1{}
+.wp_2{}
+.wp_3{}
+.wp_4{}
+.wp_5{}
+
 .items_char{
   float:left;
 
@@ -191,6 +204,33 @@ a[data-fancybox] img {
 
 .items_wrap4{
   border: 3px solid purple;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  -webkit-border-radius: 7px;
+	width:106px;
+  height:106px;
+}
+.items_wrap3{
+  border: 3px solid cyan;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  -webkit-border-radius: 7px;
+	width:106px;
+  height:106px;
+}
+.items_wrap2{
+  border: 3px solid green;
+  border-radius: 7px;
+  -moz-border-radius: 7px;
+  -khtml-border-radius: 7px;
+  -webkit-border-radius: 7px;
+	width:106px;
+  height:106px;
+}
+.items_wrap1{
+  border: 3px solid gray;
   border-radius: 7px;
   -moz-border-radius: 7px;
   -khtml-border-radius: 7px;
