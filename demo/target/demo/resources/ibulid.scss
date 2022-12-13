@@ -1,0 +1,16 @@
+.db_card {width:100%; text-align: center; overflow: hidden;}
+.db_card .card_area {_width: 164px; width: calc(25% - 14px); float:left; box-sizing: border-box; border: 1px solid #d7d7d7; margin-right: 18px;}
+.db_card .card_area:nth-child(4n) {margin-right: 0px;}
+.db_card .card_area:nth-child(4n+1) {clear:both;}
+.db_card .card_title {font-size: 14px; font-weight: bold; background: #cbcbcb; padding: 10px 0;}
+.db_card .card_title span.title_txt {font-size: 14px; font-weight: bold; }
+.db_card .card_img {padding: 15px 0; background: #f2f2f2; }
+.db_card .card_info {padding: 5px 0; border-top: 1px dotted #cbcbcb;}
+.db_card .card_info .layer_detail {display:block;}
+.db_card .card_info .outline {width:100%; margin:5px 0; border-bottom:1px dotted #cbcbcb;}
+.db_card .card_info p[class^=content-list-] {padding:0; margin:0; box-sizing:border-box; word-break: break-all;}
+.db_card .card_info p[class^=content-list-] span[class^=text-list-] { font-size: 12px; font-weight: normal; color:#000;}
+.db_card .info_bg {color:#fff; background: #0054ff; font-size: 11px; font-weight: bold; padding: 2px;}
+.db_card .info_text {color: blue;}
+.db_card .no_result {width:100%;}
+.db_card .layer_detail {display:inline-block;}
