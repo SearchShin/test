@@ -1,19 +1,125 @@
 <!DOCTYPE html>
 <html>
-    <head th:include="../fragments/template :: head(~{::title})">
-    	<title>Home page</title>
-		<link rel="stylesheet" href="../../resources/style.css" >
-		<link href="../../resources/script.js" rel="stylesheet" type="text/javascript">
-		<link href="../../resources/ibulid.scss" rel="stylesheet" type="text/css">
-	</head>
-	<body>
-		<div th:replace="../fragments/topnav.html :: fragment-nav"></div>
 
-		<div th:replace="../fragments/template :: footer"></div>
-		<menu>
-			<div class="logo"><a href=""><span class="ion-camera"></span></a></div>
-			<span id="close-menu"><span class="ion-close-round"></span></span>
-		
-		  </menu>
+<head th:include="../fragments/template :: head(~{::title})">
+	<meta charset="UTF-8">
+	<title>GENSHIN IMPACT</title>
+	<link rel="stylesheet" href="../../resources/style.css">
+	<link href="../../resources/script.js" rel="stylesheet" type="text/javascript">
+	<link href="../../resources/ibulid.scss" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<div th:replace="../fragments/topnav.html :: fragment-nav"></div>
+	<h1 align="center" style="color: white; font-size: 2em">[GENSHIN IMPACT]</h1>
+
+	<body style="background-color:#374174; background-repeat: no-repeat;">
+		<div id=" allboard" align="center">
+			<div class="home-container">
+				<table id="revolution_main_table" border="0" cellspacing="0" cellpadding="0" width="900"
+					class="title_bg">
+					<colgroup>
+						<col width="70">
+						<col width="3">
+						<!--<col width=20></col><col width=3></col>-->
+						<col width="90">
+						<col width="3">
+						<col width="">
+						<col width="3">
+						<col width="70">
+						<col width="3">
+						<col width="60">
+					</colgroup>
+					<form method="post" name="list" action="list_all.php"></form>
+					<input type="hidden" name="page" value="1">
+					<input type="hidden" name="id" value="freeboard">
+					<input type="hidden" name="select_arrange" value="headnum">
+					<input type="hidden" name="desc" value="asc">
+					<input type="hidden" name="page_num" value="30">
+					<input type="hidden" name="selected">
+					<input type="hidden" name="exec">
+					<input type="hidden" name="keyword" value="">
+					<input type="hidden" name="sn" value="off">
+					<input type="hidden" name="ss" value="Array">
+					<input type="hidden" name="sc" value="off">
+					<input type="hidden" name="html">
+
+					<tbody>
+						<tr>
+							<td colspan="11" class="title_bg_02"></td>
+						</tr>
+						<tr align="center" valign="middle" class="title_bg" style="height:40px;">
+							<td class="list_tspace">
+								<nobr>&nbsp;&nbsp;&nbsp;<font class="title_text">Num&nbsp;&nbsp;&nbsp;</font>
+								</nobr>
+							</td>
+							<td class="VBar">&nbsp;|&nbsp;</td>
+							<!--<td class='list_tspace'><font class=title_text>C</font></a></td><td style='padding-top:5px'><img src=/zboard/dq_css/separator.gif></td>-->
+							<td class="list_tspace">
+								<nobr>&nbsp;<font class="title_text">Poster&nbsp;</font>
+								</nobr>
+							</td>
+							<td class="VBar">&nbsp;|&nbsp;</td>
+							<td class="list_tspace">
+								<font class="title_text">Subject</font>
+							</td>
+							<td class="VBar">&nbsp;|&nbsp;</td>
+							<td class="list_tspace">
+								<nobr>
+									<font class="title_text">&nbsp;&nbsp;Date&nbsp;&nbsp;</font>
+								</nobr>
+							</td>
+							<td class="VBar">&nbsp;|&nbsp;</td>
+							<td class="list_tspace">
+								<nobr>
+									<font class="title_text2">&nbsp;&nbsp;&nbsp;hit&nbsp;&nbsp;&nbsp;</font>
+								</nobr>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="11" class="title_bg_03"></td>
+						</tr>
+						<!-- 여기까지 머리부분 -->
+						<tr onmouseover="this.style.backgroundColor='#F5F5F5'"
+							onmouseout="this.style.backgroundColor=''"
+							style="word-break: break-all; display: table-row;" valign="middle" th:each="event , index: ${events}">
+							<td align="center" th:text="${index.index}">
+								1
+							</td>
+							<td></td>
+							<td class="list_vspace" align="left">
+								<div style="overflow:hidden;text-overflow:ellipsis" class="list_name" th:text="${index.name}">
+									youyouyou
+								</div>
+							</td>
+							<td></td>
+							<td align="left" class="list_vspace">
+								<a href="" th:text="${index.title}">
+									title1
+								</a>
+							</td>
+							<td></td>
+							<td nowrap="" class="eng list_vspace">
+								<nobr class="eng list_vspace" th:text="${index.date}">22/12/14</nobr>
+							</td>
+							<td></td>
+							<td nowrap="" class="eng list_vspace" th:text="${index.hit}">
+								0
+							</td>
+						</tr>
+						<tr>
+							<td colspan="11" class="line_separator" height="1"></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+
+			<div th:replace="../fragments/template :: footer"></div>
+			<menu>
+				<div class="logo"><a href=""><span class="ion-camera"></span></a></div>
+				<span id="close-menu"><span class="ion-close-round"></span></span>
+
+			</menu>
 	</body>
+
 </html>
