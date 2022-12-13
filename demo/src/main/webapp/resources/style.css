@@ -186,3 +186,9 @@ a[data-fancybox] img {
 .db_card .card_img img {border-radius: 5px;border: 1px solid #b2b2b2;width: 106px;height: 106px;}
 .db_card .card_info { padding: 5px 0px 10px 0px;}
 .db_card .card_info p.content-list-0 { font-weight: bold; font-size: 16px;}
+
+.title_bg {width: 85%;border-top: 1px solid #a9ffff;border-collapse: collapse;}
+td { font-size: large; color: #a9ffff}
+.list_tspace {text-align: center}
+.list_vspace {font-size: medium; text-align: center}
+.VBar {color: #a9ffff}
