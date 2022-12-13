@@ -5,3 +5,19 @@ Fancybox.bind('[data-fancybox="gallery"]', {
       );
     },
   });
+
+
+
+function onDisplay() { 
+
+$('.attr_4').show();
+
+    } 
+
+​
+
+function offDisplay() { 
+
+$('.attr_4').hide(); 
+
+} 

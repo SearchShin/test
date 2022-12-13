@@ -36,4 +36,21 @@ public class HomeController {
 		ret.addObject("name", name);
 		return ret;
 	}
+
+	@RequestMapping(value="/char")
+	public ModelAndView character(@RequestParam(required=false, defaultValue="World") String name) {
+		ModelAndView ret = new ModelAndView("char");
+		// Adds an objet to be used in home.jsp
+		ret.addObject("name", name);
+		return ret;
+	}
+
+	
+	@RequestMapping(value="/weapons")
+	public ModelAndView weapons(@RequestParam(required=false, defaultValue="World") String name) {
+		ModelAndView ret = new ModelAndView("weapon");
+		// Adds an objet to be used in home.jsp
+		ret.addObject("name", name);
+		return ret;
+	}
 }
