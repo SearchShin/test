@@ -1,46 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <h1>test</h1> <!-- h1태그 검색사이트가 좋아함. 문서상에 1개만 있는 것을 권장한다. -->
-        <ul class="menu">
-            <li><a href="#html">HTML5</a></li>
-            <li><a href="#css">CSS3</a></li>
-            <li><a href="#js">Javascript</a></li>
-            <li><a href="#react">Framework</a></li>
-            <li><a href="#mobile">Mobile</a></li>
-        </ul>
-    </nav>
-    <style>
-        nav{ 
-            width:200px; 
-            background-color:#eee; 
-            border-right:1px solid #ddd;
-            /* height:100% 그냥 적용 안됨. 부모개념이 있어야 채워질 수 있음 */
-    
-            position:fixed; /*공중에 떠서 공간을 차지하지 않음*/
-            height:100% /*fixed를 해서 높이 100%가 가능해짐*/
-        }
-        h1{ font-size:18px;  padding:20px; }
-        .menu {}
-        .menu li {}
-    
-        /*메뉴*/
-        .menu li a {
-            height:30px;
-            line-height:30px;
-            display:block;
-            padding:0 20px;
-            font-size:12px;
-            color:#555;
-        }
-        .menu li a:hover { background-color:yellowgreen; color:white;}
-    </style>
-</body>
+<html>
+	<head th:fragment="head(title)">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>LOGIN</title>
+    	<link rel="stylesheet" type="text/css" media="all" th:href="@{/resources/bootstrap.min.css}"/>
+		<link rel="stylesheet" type="text/css" media="all" th:href="@{/resources/style.css}"/>
+	</head>
+	<body>
+		<div class="container"  th:style="${'padding-top: 50px; text-align: center'}">
+			<div class="col-lg-4" style="display: inline-block; max-width: 95%">
+					<form method="post" action= "/demo/signinCheck">
+						<h3 style="text-align: center;color: white;margin-bottom: 15px">login page</h3>
+						<div class="form-group">
+							<input type="text" class="form-control" placeholder="ID" name="uid" maxlength="20">
+						</div>
+						<div class="form-group">
+							<input type="password" class="form-control" placeholder="password" name="upw" maxlength="20">
+						</div>
+						<input type='submit' class='btn btn-primary btn-block' value='Login'>
+					</form>
+			</div>
+		</div>
+        <div th:fragment="footer">
+            <script type="text/javascript" th:src="@{/resources/bootstrap.min.js}" ></script>
+            <script type="text/javascript" th:src="@{/resources/project.js}"></script>
+        </div>
+	</body>
 </html>
