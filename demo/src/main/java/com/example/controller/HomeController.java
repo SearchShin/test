@@ -53,4 +53,12 @@ public class HomeController {
 		ret.addObject("name", name);
 		return ret;
 	}
+
+	@RequestMapping(value="/artifacts")
+	public ModelAndView artifacts(@RequestParam(required=false, defaultValue="World") String name) {
+		ModelAndView ret = new ModelAndView("artifacts");
+		// Adds an objet to be used in home.jsp
+		ret.addObject("name", name);
+		return ret;
+	}
 }
